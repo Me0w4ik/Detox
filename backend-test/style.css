@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #1a1a1a;
+    color: #e0e0e0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+main {
+    width: 100%;
+    max-width: 500px;
+}
+
+.contact-form-section {
+    background: #2d2d2d;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    border: 1px solid #404040;
+}
+
+.form-container {
+    width: 100%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.form-group i {
+    position: absolute;
+    left: 15px;
+    color: #888;
+    font-size: 16px;
+    z-index: 1;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 15px;
+    background: #3a3a3a;
+    border: 2px solid #404040;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #e0e0e0;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #6366f1;
+    background: #444444;
+}
+
+.form-group input::placeholder {
+    color: #888;
+}
+
+.submit-btn {
+    padding: 15px 25px;
+    background: #6366f1;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background: #5a5fcf;
+}
+
+.submit-btn:active {
+    transform: translateY(1px);
+}
+
+.form-message {
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 500;
+    display: none;
+}
+
+.form-message.sending {
+    display: block;
+    background: #3b82f6;
+    color: white;
+}
+
+.form-message.success {
+    display: block;
+    background: #10b981;
+    color: white;
+}
+
+.form-message.error {
+    display: block;
+    background: #ef4444;
+    color: white;
+}
